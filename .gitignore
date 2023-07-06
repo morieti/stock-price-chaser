@@ -1,0 +1,9 @@
+.env
+__pycache__
+venv
+.idea
+*.csv
+*.json
+*.txt
+!requirements.txt
+*.log
