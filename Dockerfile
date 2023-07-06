@@ -8,7 +8,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV TZ=Asia/Tehran
 
-RUN apt update && apt install gettext vim apt-utils build-essentials -y && apt autoclean
+RUN apt update && apt install gettext vim apt-utils -y && apt autoclean
 
 RUN pip install --upgrade pip --ignore-installed
 COPY ./requirements.txt .
