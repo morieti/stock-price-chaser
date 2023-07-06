@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  app:
+  tpd_web:
     build: .
-    container_name: serp_web
+    container_name: tpd_web
     restart: always
     volumes:
       - ./:/app
@@ -25,8 +25,8 @@ services:
     environment:
       MYSQL_DATABASE: tpd
       MYSQL_USER: tpd_user
-      MYSQL_PASSWORD: c$sk0dSdwQOgpf$p*r3Zf392
-      MYSQL_ROOT_PASSWORD: c$sk0dSdwQOgpf$p*r3Zf392
+      MYSQL_PASSWORD: c!sk0dSdwQOgpf!p*r3Zf392
+      MYSQL_ROOT_PASSWORD: c!sk0dSdwQOgpf!p*r3Zf392
     ports:
       - "3306:3306"
     volumes:
